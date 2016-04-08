@@ -13,6 +13,7 @@ python -m crosscorr.run default.yaml
 
 # Documentation
 
+Hosted on [Read the Docs](https://crosscorr.readthedocs.org/en/latest/).
 
 # Installation
 
