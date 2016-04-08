@@ -35,7 +35,7 @@ class Mock(MagicMock):
     def __getattr__(cls, name):
             return Mock()
 
-MOCK_MODULES = ['esutil', 'numpy', 'pandas', 'scipy']
+MOCK_MODULES = ['treecorr', 'matplotlib', 'numpy', 'pandas', 'scipy']
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 # Add any Sphinx extension module names here, as strings. They can be
