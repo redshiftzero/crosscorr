@@ -4,8 +4,9 @@ import yaml
 import argparse
 import subprocess
 import pdb
+import datetime
 
-import compute
+import compute, plots
 
 
 """
@@ -22,11 +23,17 @@ def process_configuration(filename):
 
 
 def main(config):
+    # Use timestamp to label all plots and output files
+    timestamp = datetime.datetime.now().isoformat()
+
     data_p, data_s = compute.read_all_data(cfg)
     
     # Apply any cuts (on mass, mag, etc.) TODO
+    plots.make_mag_dist(data_p['MAG_I'], data_s['MAG_I'],
+                        inform="both_{}".format(timestamp))
 
     # Cut into regions of roughly equal galaxy density
+
 
     # Compute redshift distributions in each jackknife region
 
