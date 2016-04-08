@@ -2,9 +2,17 @@
 
 Analysis pipeline for generating the clustering redshift distributions of a photometric sample given a spectroscopic sample. 
 
+# Usage
+
+```
+python -m crosscorr.run default.yaml
+```
+
 # Documentation
 
+
 # Installation
+
 
 # Issues
 
