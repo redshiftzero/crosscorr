@@ -2,8 +2,12 @@
 # Cross-correlation redshift run specification config #
 #######################################################
 
+# Text that describes the run that will be printed
+# along with the timestamp in the filenames produced
+descrip: 'y1a1_gold'
+
 # Define the locations of the data files (.fits tables)
-data_p: '/home/user/Documents/DESData/y1a1_stripe82_valid_sample_buzzard_v1.1.fits'
+data_p: '/home/user/Documents/DESData/Buzzard_v1.1_Y1A1.208.fit'
 data_s: '/home/user/Documents/DESData/y1a1_stripe82_train_sample_buzzard_v1.1.fits'
 
 # Additional cuts 

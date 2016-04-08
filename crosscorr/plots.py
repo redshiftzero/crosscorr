@@ -8,6 +8,18 @@ plt.rc('text', usetex=True)
 plt.rc('font', family='serif')
 
 
+def make_sky_dist(catalog, inform):
+    plt.scatter(catalog['RA'], catalog['DEC'], linewidths=4, s=1, edgecolors='none')
+    plt.grid(True)
+    plt.axis('equal')
+    plt.xlabel('RA')
+    plt.ylabel('DEC')
+    plt.savefig('skyflatplotzoom_{}.png'.format(inform))
+    plt.clf()
+    plt.close('all')
+    return None
+
+
 def make_mag_dist(magnitude_p, magnitude_s, inform, band='i'):
     """
     Compare magnitude histograms of two datasets. 

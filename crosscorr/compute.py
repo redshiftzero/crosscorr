@@ -1,3 +1,4 @@
+import numpy as np
 import fitsio
 import pdb
 
@@ -25,14 +26,3 @@ def read_all_data(config):
                                     cols=default_columns)
 
     return photometric_cat, spectroscopic_cat
-
-
-def subsample(catalog, num):
-    if num != -1 and len(catalog) > num:
-        index = random.randint(0, len(catalog) - 1, 2 * num)
-        index = list(set(index))  # Remove duplicates
-        random.shuffle(index)
-        indices = index[0:num]
-        catalog = catalog[indices]
-    return catalog
-

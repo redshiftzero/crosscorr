@@ -25,15 +25,17 @@ def process_configuration(filename):
 def main(config):
     # Use timestamp to label all plots and output files
     timestamp = datetime.datetime.now().isoformat()
+    descrip_string = "{}_{}".format(config['descrip'], timestamp)
 
     data_p, data_s = compute.read_all_data(cfg)
     
     # Apply any cuts (on mass, mag, etc.) TODO
     plots.make_mag_dist(data_p['MAG_I'], data_s['MAG_I'],
-                        inform="both_{}".format(timestamp))
+                        inform=descrip_string)
+    plots.make_sky_dist(data_s, inform=descrip_string)
 
     # Cut into regions of roughly equal galaxy density
-
+    
 
     # Compute redshift distributions in each jackknife region
 
