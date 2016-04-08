@@ -1,0 +1,32 @@
+#######################################################
+# Cross-correlation redshift run specification config #
+#######################################################
+
+# Define the locations of the data files (.fits tables)
+data_p: '/home/user/Documents/DESData/y1a1_stripe82_valid_sample_buzzard_v1.1.fits'
+data_s: '/home/user/Documents/DESData/y1a1_stripe82_train_sample_buzzard_v1.1.fits'
+
+# Additional cuts 
+#ra_low: 306.
+#ra_high: 309.5
+#dec_low: -13.
+#dec_high: -7.
+
+#iband_cut_s: 22.5
+#iband_cut_p: 24.0
+
+# To cut on photometric redshift bins
+num_photoz_bins: 25
+
+# Binning
+num_zbins_truth: 50 
+num_zbins_reconstruction: 25
+
+# Correlation functions
+# Number of angular bins for correlation function
+ntheta: 10
+theta_min: 0.01
+theta_max: 0.10
+
+# Number of jackknife resamples
+num_jack: 10  
