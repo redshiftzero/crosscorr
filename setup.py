@@ -37,7 +37,7 @@ setup(
 
     packages=find_packages(exclude=['images', 'docs', 'tests*']),
 
-    setup_requires=['numpy', 'scipy'],
+    setup_requires=['numpy'],
     install_requires=['numpy', 'pyyaml', 'pandas', 'esutil',
                       'datetime', 'scipy',
                       'fitsio', 'matplotlib'],
