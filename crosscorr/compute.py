@@ -1,7 +1,6 @@
 import fitsio
 import pdb
 
-import estimators
 
 
 def load_fits(fits, cols):
@@ -19,7 +18,7 @@ def load_fits(fits, cols):
 
 
 
-def read_all_data(config_file):
+def read_all_data(config):
     default_columns = ['RA', 'DEC', 'Z']
     photometric_cat = fitsio.read(config['data_p'], 
                                   cols=default_columns)
