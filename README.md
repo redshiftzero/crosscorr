@@ -3,7 +3,9 @@
 ![Build Status](https://travis-ci.org/redshiftzero/crosscorr.svg?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/crosscorr/badge/?version=latest)](http://crosscorr.readthedocs.org/en/latest/?badge=latest)
 
-Analysis pipeline for generating the clustering redshift distributions of a photometric sample given a spectroscopic sample. 
+Analysis pipeline for generating the clustering redshift distribution of a photometric sample given a spectroscopic sample. 
+
+Note: This is in active development - I'm in the progress of rewriting my thesis code and putting it here. Not everything is working yet. 
 
 # Usage
 
